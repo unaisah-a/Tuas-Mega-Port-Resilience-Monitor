@@ -1,0 +1,12 @@
+Route validation performed for V4
+---------------------------------
+Routes checked: 18
+Vessels with a route: 18
+Route start mismatches: 0
+Route destination mismatches: 0
+Land intersections detected: 0
+
+Method: every route polyline was intersected with Basemap intermediate-resolution
+land polygons. Leaflet route simplification is also disabled in the application so
+zooming cannot replace safe waypoint bends with straight land-crossing shortcuts.
+These simulated routes remain demonstration geometry and are not for navigation.

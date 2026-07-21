@@ -1,0 +1,23 @@
+TMPRM V5 route validation
+==========================
+
+Global vessels: 18
+Global routes: 18
+Routes with matching vessel start point: 18/18
+Routes with matching named destination endpoint: 18/18
+Routes with missing endpoints: 0
+Tuas close-zoom pilot approaches: 2
+
+Route generation:
+- Long-distance geometry was regenerated from a maritime-routing graph instead of straight geographic lines.
+- Route simplification is disabled in Leaflet (smoothFactor=0), so zooming cannot replace bends with land-crossing shortcuts.
+- Route clipping is disabled (noClip), so lines do not randomly stop at viewport/tile boundaries.
+- Pacific geometry keeps continuous unwrapped longitude coordinates across the International Date Line.
+- Dynamic copies are rendered around the active longitude, so routes and markers persist during continuous east/west panning.
+
+Tuas close zoom:
+- Map target: actual Tuas port centre (1.2527, 103.6155).
+- Route endpoint: Tuas marine arrival gate (1.2450, 103.5940).
+- Only dedicated pilot approaches are shown at close zoom to prevent global routes from crossing reclaimed land.
+
+This is simulated demonstration geometry and is not suitable for navigation.
